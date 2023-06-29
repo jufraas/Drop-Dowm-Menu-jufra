@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+html {
+    background-image: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 15px;
+    overflow: hidden;
+    height: 100vh;
+}
+
+header:hover nav{
+    background-color: #252525;
+    transition: all .5s;
+    box-shadow: 1px 1px 4px;
+}
+
+header:hover ul li a {
+    color: #ffffff;
+    transition: all .5s;
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0; 
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    position: relative;
+    display: list-item;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 100%;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+}
+
+nav ul ul li label {
+    display: block;
+    padding: 10px;
+}
+
+nav ul ul li label:hover {
+    background-color: #e6e6e6;
+}
+
+nav input[type="checkbox"] {
+    display: none;
+}
+
+nav input[type="checkbox"]:checked + label {
+    background-color: #f2f2f2;
+}
+
+main {
+    margin: 0 0 0 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+main picture {
+    width: 50%;
+}
+
+main picture img {
+    position: relative;
+    top: -100px;
+    right: -150px;
+    width: 100%;
+}
+
+main section {
+    font-size: 30px;
+}
+
+main section h1 {
+    margin-bottom: 16px;
+}
+
+main section p span {
+    color: #ffbd59;
+}
+
+
+
+@media only screen and (max-width:800px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main section {
+    position: absolute;
+    bottom: 15px;
+  }
+
+  main picture {
+    width: 100%;
+  }
+
+}
+  
+
+
+
